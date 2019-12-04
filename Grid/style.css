@@ -26,8 +26,8 @@ input[type=number] {
 .navbar {
   overflow: hidden;
   background-color: #673AB7;
-  position: -webkit-sticky;
-  position: sticky;/* Position the navbar at the top of the page */
+  /*position: -webkit-sticky;*/
+  position: fixed;/* Position the navbar at the top of the page */
   top:0;
   left: 0;
   width: 100%; /* Full width */
