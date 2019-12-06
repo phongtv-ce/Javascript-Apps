@@ -27,12 +27,15 @@ input[type=number] {
   overflow: hidden;
   background-color: #673AB7;
   /*position: -webkit-sticky;*/
-  position: fixed;/* Position the navbar at the top of the page */
-  top:0;
-  left: 0;
-  width: 100%; /* Full width */
+  /*position: fixed;*//* Position the navbar at the top of the page */
+  /*top:0;
+  left: 0;*/
+  /*width: 100%;*/ /* Full width */
 }
-
+.fixed-nav{
+  position: fixed;
+  top: 0;
+}
 /* Links inside the navbar */
 .navbar .nav-item {
   float: left;
@@ -64,11 +67,46 @@ input[type=number] {
   padding: 14px 0;
   width: 50px;
 }
-
+.wrapper{
+  margin-left: -10px;
+}
 .hidden{
   display: none;
 }
 .grid{
-    margin-top: 50px;
-    margin-left: -10px;
+    /*margin-top: 50px;
+    margin-left: -10px;*/
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.load-more{
+  opacity: 0.5;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.hidden{
+  display: none;
 }
